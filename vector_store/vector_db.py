@@ -34,6 +34,7 @@ for r in result:
     print(r.page_content)
     print(r.metadata)
 
+# Similarity Search
 retriever = vectorstore.as_retriever()
 
 docs = retriever.invoke("Explain deep learning")

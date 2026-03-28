@@ -25,6 +25,6 @@ embedding_model = GoogleGenerativeAIEmbeddings(model="gemini-embedding-001")
 
 vectorstore = Chroma.from_documents(
     documents=chunks,
-    embeddings=embedding_model,
+    embedding=embedding_model,
     persist_directory="chroma_db"
 )
