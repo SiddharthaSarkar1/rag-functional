@@ -21,7 +21,7 @@ vectorstore = Chroma.from_documents(docs, embeddings)
 
 similarity_retriever = vectorstore.as_retriever(
     search_type="similarity",
-    search_kwargs={"k":3}
+    search_kwargs={"k":3} # Keyword arguments
 )
 # Here we are not using "persist_directory" so it will store within Ram
 
